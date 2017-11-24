@@ -1,0 +1,40 @@
+{
+  "name": "cycle-cropper",
+  "version": "1.0.0",
+  "description": "Cycle.js component for cropper.js",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "node fuse.js",
+    "lint": "./node_modules/.bin/tslint -c tslint.json src/**/*.ts",
+    "watch:lint": "watch 'npm run lint' src",
+    "watch:build": "watch 'npm run build' src",
+    "watch": "watch 'npm run lint && npm run build' src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unhappychoice/cycle-cropper.git"
+  },
+  "keywords": [
+    "cropper.js",
+    "crop",
+    "image"
+  ],
+  "author": "unhappychoice",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/unhappychoice/cycle-cropper/issues"
+  },
+  "homepage": "https://github.com/unhappychoice/cycle-cropper#readme",
+  "dependencies": {
+    "cropperjs": "^1.1.3"
+  },
+  "devDependencies": {
+    "@cycle/dom": "^19.3.0",
+    "@cycle/run": "3.x",
+    "fuse-box": "^2.2.31",
+    "tslint": "^5.7.0",
+    "typescript": "^2.5.3",
+    "watch": "^1.0.2",
+    "xstream": "^10.9.0"
+  }
+}
