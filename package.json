@@ -26,12 +26,14 @@
   },
   "homepage": "https://github.com/unhappychoice/cycle-cropper#readme",
   "dependencies": {
+    "@types/cropperjs": "^1.1.0",
     "cropperjs": "^1.1.3"
   },
   "devDependencies": {
     "@cycle/dom": "^19.3.0",
-    "@cycle/run": "3.x",
-    "fuse-box": "^2.2.31",
+    "@cycle/run": "^3.4.0",
+
+    "fuse-box": "^2.4.0",
     "tslint": "^5.7.0",
     "typescript": "^2.5.3",
     "watch": "^1.0.2",
