@@ -9,6 +9,7 @@ export interface Sources {
 
 export interface Sinks {
     DOM: Stream<VNode>;
+    cropper$: Stream<Cropper>;
     crop$: Stream<object>;
     cropEnd$: Stream<object>;
     cropMove$: Stream<object>;
