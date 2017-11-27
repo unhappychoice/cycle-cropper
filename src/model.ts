@@ -16,11 +16,11 @@ export const model = (actions: Actions): Stream<State> => {
     return actions.onImageElementLoaded$
         .compose(sampleCombine(actions.onPropsLoaded$))
         .map(([element, props]) => {
-            const crop$ = Stream.empty();
-            const cropEnd$ = Stream.empty();
-            const cropMove$ = Stream.empty();
-            const cropStart$ = Stream.empty();
-            const zoom$ = Stream.empty();
+            const crop$ = Stream.never();
+            const cropEnd$ = Stream.never();
+            const cropMove$ = Stream.never();
+            const cropStart$ = Stream.never();
+            const zoom$ = Stream.never();
 
             const crop = (e) => crop$.shamefullySendNext(e);
             const cropEnd = (e) => cropEnd$.shamefullySendNext(e);
@@ -40,11 +40,11 @@ export const model = (actions: Actions): Stream<State> => {
             return { cropper, crop$, cropEnd$, cropMove$, cropStart$, zoom$ };
         })
         .startWith({
-            crop$: Stream.empty(),
-            cropEnd$: Stream.empty(),
-            cropMove$: Stream.empty(),
-            cropStart$: Stream.empty(),
+            crop$: Stream.never(),
+            cropEnd$: Stream.never(),
+            cropMove$: Stream.never(),
+            cropStart$: Stream.never(),
             cropper: undefined,
-            zoom$: Stream.empty()
+            zoom$: Stream.never()
         });
 };
