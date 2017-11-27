@@ -1,6 +1,6 @@
 {
   "name": "cycle-cropper",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Cycle.js component for cropper.js",
   "main": "dist/index.js",
   "scripts": {
