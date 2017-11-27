@@ -13,8 +13,9 @@ export interface State {
     zoom$: Stream<object>;
 }
 
-export const model = (actions: Actions): Stream<State> => {
-    return actions.onImageElementLoaded$
+export const model = (actions: Actions): Stream<State> =>
+    actions.onImageElementLoaded$
+        .take(1)
         .compose(sampleCombine(actions.onPropsLoaded$))
         .map(([element, props]) => {
             const crop$ = Stream.never();
@@ -48,4 +49,3 @@ export const model = (actions: Actions): Stream<State> => {
             cropper: undefined,
             zoom$: Stream.never()
         });
-};
