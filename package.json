@@ -1,6 +1,6 @@
 {
   "name": "cycle-cropper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cycle.js component for cropper.js",
   "main": "dist/index.js",
   "scripts": {
@@ -32,7 +32,6 @@
   "devDependencies": {
     "@cycle/dom": "^19.3.0",
     "@cycle/run": "^3.4.0",
-
     "fuse-box": "^2.4.0",
     "tslint": "^5.7.0",
     "typescript": "^2.5.3",
