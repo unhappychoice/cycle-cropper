@@ -16,7 +16,7 @@
     "skipDefaultLibCheck": true,
     "skipLibCheck": false,
     "rootDir": ".",
-    "sourceMap": true,
+    "sourceMap": false,
     "declaration": true,
     "listFiles": false,
     "traceResolution": false,
