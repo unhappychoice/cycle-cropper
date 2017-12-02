@@ -9,7 +9,6 @@ const fuse = FuseBox.init({
   globals: {"cycle-cropper": "*"},
   output: 'dist/$name.js',
   target: "browser",
-  sourceMaps: { project: true, vendor: false },
   plugins: [
     CSSPlugin({
       outFile: (file) => `dist/css/${file.split('/').pop()}`,
