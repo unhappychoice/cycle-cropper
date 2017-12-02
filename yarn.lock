@@ -2075,7 +2075,7 @@ supports-color@^4.0.0, supports-color@^4.4.0:
   dependencies:
     has-flag "^2.0.0"
 
-symbol-observable@^1.0.2, symbol-observable@^1.0.4:
+symbol-observable@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.0.4.tgz#29bf615d4aa7121bdd898b22d4b3f9bc4e2aa03d"
 
@@ -2261,17 +2261,11 @@ ws@^1.1.1:
     options ">=0.0.5"
     ultron "1.0.x"
 
-"xstream@10.x || 11.x", xstream@11.x:
+"xstream@10.x || 11.x", xstream@11.x, xstream@^11.*:
   version "11.0.0"
   resolved "https://registry.yarnpkg.com/xstream/-/xstream-11.0.0.tgz#2018c3c4e573f76b62b9cf96a17a46876ab120e0"
   dependencies:
     symbol-observable "^1.0.4"
-
-xstream@^10.9.0:
-  version "10.9.0"
-  resolved "https://registry.yarnpkg.com/xstream/-/xstream-10.9.0.tgz#db7934cec2da01360d43abbbc879b84524397b55"
-  dependencies:
-    symbol-observable "^1.0.2"
 
 y18n@^3.2.1:
   version "3.2.1"
