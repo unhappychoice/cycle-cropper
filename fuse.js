@@ -4,11 +4,13 @@ const fuse = FuseBox.init({
   homeDir: 'src',
   package: {
     name: "cycle-cropper",
-    main: "src/index.ts"
+    main: "index.ts"
   },
-  globals: {"cycle-cropper": "*"},
+  cache: false,
+  globals: { "cycle-cropper": "*" },
   output: 'dist/$name.js',
   target: "browser",
+  sourceMaps: { project: true, vendor: true },
   plugins: [
     CSSPlugin({
       outFile: (file) => `dist/css/${file.split('/').pop()}`,
@@ -17,5 +19,5 @@ const fuse = FuseBox.init({
   ]
 });
 
-fuse.bundle('index').instructions('> index.ts');
+fuse.bundle('index').instructions('index.ts');
 fuse.run();

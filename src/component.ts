@@ -1,8 +1,8 @@
+import sampleCombine from "xstream/extra/sampleCombine";
 import {intent} from "./intent";
 import {Sinks, Sources} from "./interfaces";
 import {model} from "./model";
 import {view} from "./view";
-import sampleCombine from "xstream/extra/sampleCombine";
 
 export const CropperComponent = (sources: Sources): Sinks => {
     const actions = intent(sources);
