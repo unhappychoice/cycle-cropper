@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/src/index.d.ts",
   "scripts": {
-    "build": "webpack",
+    "build": "webpack && dts-bundle --name cycle-pusher --baseDir dist --main dist/src/index.d.ts --out index.d.ts",
     "lint": "./node_modules/.bin/tslint -c tslint.json src/**/*.ts",
     "watch:lint": "watch 'npm run lint' src",
     "watch:build": "watch 'npm run build' src",
