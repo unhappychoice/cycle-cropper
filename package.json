@@ -6,7 +6,7 @@
   "ts:main": "src/index.ts",
   "types": "src/index.ts",
   "scripts": {
-    "build": "node fuse.js",
+    "build": "webpack",
     "lint": "./node_modules/.bin/tslint -c tslint.json src/**/*.ts",
     "watch:lint": "watch 'npm run lint' src",
     "watch:build": "watch 'npm run build' src",
@@ -39,10 +39,13 @@
   "devDependencies": {
     "@cycle/dom": "^19.3.0",
     "@cycle/run": "^3.4.0",
-    "fuse-box": "^3.0.0-next.26",
+    "css-loader": "^0.28.8",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "ts-loader": "^3.2.0",
     "tslint": "^5.7.0",
-    "typescript": "^2.5.3",
+    "typescript": "^2.6.2",
     "watch": "^1.0.2",
+    "webpack": "^3.10.0",
     "xstream": "^11.*"
   }
 }

@@ -20,5 +20,5 @@ export const CropperComponent = (sources: Sources): Sinks => {
         .compose(sampleCombine(state$))
         .addListener({ next: ([image, state]) => state.cropper && state.cropper.replace(image) });
 
-    return { DOM: vdom$, cropper$, crop$, cropEnd$, cropMove$, cropStart$, zoom$};
+    return { DOM: vdom$, cropper$, crop$, cropEnd$, cropMove$, cropStart$, zoom$ } as Sinks;
 };

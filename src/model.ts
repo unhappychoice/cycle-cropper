@@ -5,7 +5,7 @@ import sampleCombine from "xstream/extra/sampleCombine";
 import {Actions} from "./intent";
 
 export interface State {
-    cropper?: object;
+    cropper?: any;
     crop$: Stream<object>;
     cropEnd$: Stream<object>;
     cropMove$: Stream<object>;
@@ -37,7 +37,7 @@ export const model = (actions: Actions): Stream<State> =>
                 cropmove,
                 cropstart,
                 zoom
-            });
+            } as any);
 
             return { cropper, crop$, cropEnd$, cropMove$, cropStart$, zoom$ };
         })
