@@ -3,7 +3,7 @@
   "version": "1.1.16",
   "description": "Cycle.js component for cropper.js",
   "main": "dist/index.js",
-  "types": "dist/src/index.d.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "webpack && dts-bundle --name cycle-pusher --baseDir dist --main dist/src/index.d.ts --out index.d.ts",
     "lint": "./node_modules/.bin/tslint -c tslint.json src/**/*.ts",
