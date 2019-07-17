@@ -1,6 +1,6 @@
 # cycle-cropper
 [![npm version](https://badge.fury.io/js/cycle-cropper.svg)](https://badge.fury.io/js/cycle-cropper)
-![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/unhappychoice/cycle-cropper.svg)
+[![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/unhappychoice/cycle-cropper.svg)](https://libraries.io/github/unhappychoice/cycle-cropper)
 ![npm bundle size](https://img.shields.io/bundlephobia/min/cycle-cropper.svg)
 ![npm](https://img.shields.io/npm/dt/cycle-cropper.svg)
 ![GitHub](https://img.shields.io/github/license/unhappychoice/cycle-cropper.svg)
