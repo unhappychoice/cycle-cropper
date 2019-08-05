@@ -105,9 +105,9 @@ concat-map@0.0.1:
   integrity sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
 
 cropperjs@^1.1.3:
-  version "1.5.4"
-  resolved "https://registry.yarnpkg.com/cropperjs/-/cropperjs-1.5.4.tgz#183590efb14cbef779d1532f898273f32d49cc0f"
-  integrity sha512-2DczDxhqruvDz+oOUjRTXvsIyUnlSDvWG7r7qaUQioPoZAgfA07kaTtdNXAD/8ezA4CHRk1MT7PFMFQVpcD/1Q==
+  version "1.5.5"
+  resolved "https://registry.yarnpkg.com/cropperjs/-/cropperjs-1.5.5.tgz#07d04c64244ab88c1bfc382a848ec346ef50b7b9"
+  integrity sha512-aJF6GuGk0K+nxYpmK9ZEc0p8foHcrM3DAAK/1F66qe0h/b08hBNbjpZRM0JbPNHw452LCxzS8NndG5VMv+/hLA==
 
 diff@^3.2.0:
   version "3.5.0"
