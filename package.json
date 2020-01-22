@@ -38,7 +38,7 @@
   "devDependencies": {
     "@cycle/dom": "^22.3.0",
     "@cycle/run": "^5.2.0",
-    "tslint": "^5.7.0",
+    "tslint": "^6.0.0",
     "typescript": "^3.5.3",
     "watch": "^1.0.2",
     "xstream": "^11.*"
