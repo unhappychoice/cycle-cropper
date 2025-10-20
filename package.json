@@ -28,7 +28,7 @@
   "homepage": "https://github.com/unhappychoice/cycle-cropper#readme",
   "dependencies": {
     "@types/cropperjs": "^1.1.0",
-    "cropperjs": "^1.1.3"
+    "cropperjs": "^2.1.0"
   },
   "peerDependencies": {
     "@cycle/dom": "^22.*",
