@@ -40,7 +40,7 @@
     "@cycle/run": "^5.2.0",
     "chokidar-cli": "^3.0.0",
     "tslint": "^6.0.0",
-    "typescript": "^5.0.2",
+    "typescript": "^6.0.2",
     "xstream": "^11.*"
   }
 }
