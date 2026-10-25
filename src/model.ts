@@ -38,7 +38,7 @@ export const model = (actions: Actions): Stream<State> =>
                 zoom
             };
 
-            const cropper = new Cropper(element, options);
+            const cropper = new Cropper(element as HTMLImageElement, options);
 
             return { cropper, crop$, cropEnd$, cropMove$, cropStart$, zoom$ };
         })
