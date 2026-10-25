@@ -39,7 +39,7 @@ run(main, {
 
 ### Props
 
-`props$` takes every [cropper.js 1.x option](https://github.com/fengyuanchen/cropperjs/tree/v1.6.2#options)
+`props$` takes every [cropper.js 1.x option](https://github.com/fengyuanchen/cropperjs/tree/v1.7.0#options)
 (`aspectRatio`, `initialAspectRatio`, `data`, `dragMode`, `viewMode`, `preview`, `wheelZoomRatio`, ...),
 typed as `Cropper.Options`. The `crop`, `cropend`, `cropmove`, `cropstart` and `zoom` callbacks are left out
 because the component exposes them as the `crop$`, `cropEnd$`, `cropMove$`, `cropStart$` and `zoom$` sinks.
