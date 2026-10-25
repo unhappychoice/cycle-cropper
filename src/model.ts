@@ -2,6 +2,7 @@ import Cropper from "cropperjs";
 import Stream from "xstream";
 import sampleCombine from "xstream/extra/sampleCombine";
 import {Actions} from "./intent";
+import {toCropperOptions} from "./options";
 
 export interface State {
     cropper?: any;
@@ -30,7 +31,7 @@ export const model = (actions: Actions): Stream<State> =>
             const zoom = (e: CustomEvent) => zoom$.shamefullySendNext(e);
 
             const options = {
-                ...props,
+                ...toCropperOptions(props),
                 crop,
                 cropend,
                 cropmove,
@@ -38,7 +39,7 @@ export const model = (actions: Actions): Stream<State> =>
                 zoom
             };
 
-            const cropper = new Cropper(element, options);
+            const cropper = new Cropper(element as HTMLImageElement, options);
 
             return { cropper, crop$, cropEnd$, cropMove$, cropStart$, zoom$ };
         })

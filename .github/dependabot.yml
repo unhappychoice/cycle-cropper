@@ -7,3 +7,6 @@ updates:
       time: "12:00"
       timezone: Asia/Tokyo
     open-pull-requests-limit: 20
+    ignore:
+      - dependency-name: cropperjs
+        update-types: ["version-update:semver-major"]
